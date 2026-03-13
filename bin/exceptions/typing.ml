@@ -1,4 +1,4 @@
-(* open Effective_concurrency.Bool
+open Effective_concurrency.Bool
 
 exception R of int;;
 
@@ -27,4 +27,4 @@ try 1 + raise (R 2) with
 (* Does this system have type safety? *)
 
 try if b then 1 else raise (R 2) with 
-  | R(x) -> x >= 0;; *)
+  | R(x) -> x >= 0;;
