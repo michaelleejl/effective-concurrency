@@ -5,7 +5,8 @@ Part IB students at the University of Cambridge about the semantics of
 exceptions, effect, and concurrency. 
 
 ## Repository Structure (and Teaching Guide)
-The `lib` directory is structured as follows
+The `bin` directory contains the programs used for teaching.
+It is structured as follows
 
 ```
 bin/
