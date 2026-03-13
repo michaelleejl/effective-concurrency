@@ -7,20 +7,20 @@
 (source
  (github username/reponame))
 
-(authors "Author Name <author@example.com>")
+(authors "Michael Lee <michael.lee@cl.cam.ac.uk>")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "Michael Lee <michael.lee@cl.cam.ac.uk>")
 
-(license LICENSE)
+(license MIT)
 
-(documentation https://url/to/documentation)
+(documentation https://www.cl.cam.ac.uk/teaching/2526/Semantics/)
 
 (package
  (name effective_concurrency)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "A collection of programs designed to teach the semantics of exceptions, effects, and concurrency.")
+ (description "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, Designed for the University of Cambridge Part IB Semantics of Programming Languages course")
  (depends ocaml)
  (tags
-  ("add topics" "to describe" your project)))
+  (exceptions effects concurrency semantics smallstep)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
