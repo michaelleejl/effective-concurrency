@@ -18,7 +18,7 @@
 (package
  (name effective_concurrency)
  (synopsis "A collection of programs designed to teach the semantics of exceptions, effects, and concurrency.")
- (description "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, Designed for the University of Cambridge Part IB Semantics of Programming Languages course")
+ (description "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, designed for the University of Cambridge Part IB Semantics of Programming Languages course")
  (depends ocaml)
  (tags
   (exceptions effects concurrency semantics smallstep)))

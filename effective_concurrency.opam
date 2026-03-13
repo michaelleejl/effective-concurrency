@@ -3,7 +3,7 @@ opam-version: "2.0"
 synopsis:
   "A collection of programs designed to teach the semantics of exceptions, effects, and concurrency."
 description:
-  "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, Designed for the University of Cambridge Part IB Semantics of Programming Languages course"
+  "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, designed for the University of Cambridge Part IB Semantics of Programming Languages course"
 maintainer: ["Michael Lee <michael.lee@cl.cam.ac.uk>"]
 authors: ["Michael Lee <michael.lee@cl.cam.ac.uk>"]
 license: "MIT"
