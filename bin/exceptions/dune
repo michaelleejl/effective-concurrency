@@ -1,0 +1,4 @@
+(executables
+ (public_names basic_exn contexts deepest typing)
+ (names basic_exn contexts deepest typing)
+ (libraries effective_concurrency))

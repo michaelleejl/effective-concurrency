@@ -1,0 +1,4 @@
+(executables
+ (public_names basic_eff effects ref)
+ (names basic_eff effects ref)
+ (libraries effective_concurrency))
