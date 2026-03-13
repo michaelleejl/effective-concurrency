@@ -7,8 +7,6 @@ open Effect
 open Effect.Deep
 open Printf 
 
-(*Uses of effects: to implement concurrency!*)
-
 type location = int 
 
 type lock = int 

@@ -1,10 +1,8 @@
-(* Extending the language with thread ids *)
+(* Extending the language with barriers *)
 
 open Effect
 open Effect.Deep
 open Printf 
-
-(*Uses of effects: to implement concurrency!*)
 
 type location = int 
 
@@ -48,9 +46,6 @@ let rec expr_to_str = function
 
 
 type config = expr * id 
-
-let config_to_str (c, id) = 
-  sprintf "<%s, id%d>" (expr_to_str c) id 
 
 type _ Effect.t += ThreadDeref: id * location -> expr t;;
 type _ Effect.t += ThreadAssign: (id * location * int) -> expr t;;
