@@ -74,3 +74,21 @@ certain typing schemes for exceptions (allowing the
 type when an exception is raised to differ from the type 
 of normal execution) do not have type soundness, since the value of `b`
 is hidden from students.
+
+## Sample Usage
+Here is a guide on how to run programs 
+
+**Step 1**: Open the REPL
+```zsh
+dune utop
+```
+
+**Step 2**: Load an interpreter of your choice
+```ocaml
+#use "bin/concurrency/supo2_lock.ml";;
+```
+
+**Step 3**: Run that interpreter on a program of your choice
+```ocaml
+run_process process2;;
+```
