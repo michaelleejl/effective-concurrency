@@ -1,0 +1,4 @@
+(executable
+ (public_name effective_concurrency)
+ (name main)
+ (libraries effective_concurrency))

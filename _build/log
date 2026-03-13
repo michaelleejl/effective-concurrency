@@ -1,0 +1,6 @@
+# dune init project effective_concurrency
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/michaelleejl/.cache/dune/db
+# Workspace root: /Users/michaelleejl/Documents/effective_concurrency
+# Auto-detected concurrency: 10
