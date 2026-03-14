@@ -1,11 +1,11 @@
-(lang dune 3.17)
+(lang dune 3.21.1)
 
 (name effective_concurrency)
 
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github michaelleejl/effective-concurrency))
 
 (authors "Michael Lee <michael.lee@cl.cam.ac.uk>")
 
@@ -19,7 +19,9 @@
  (name effective_concurrency)
  (synopsis "A collection of programs designed to teach the semantics of exceptions, effects, and concurrency.")
  (description "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, designed for the University of Cambridge Part IB Semantics of Programming Languages course")
- (depends ocaml)
+ (depends 
+  (ocaml (>= 5.3.0))
+ )
  (tags
   (exceptions effects concurrency semantics smallstep)))
 
