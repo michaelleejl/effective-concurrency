@@ -1,4 +1,4 @@
-(lang dune 3.21.1)
+(lang dune 3.21)
 
 (name effective_concurrency)
 
@@ -21,6 +21,11 @@
  (description "A collection of OCaml 5.3.0 programs designed to teach the semantics of exceptions, effects, and concurrency, designed for the University of Cambridge Part IB Semantics of Programming Languages course")
  (depends 
   (ocaml (>= 5.3.0))
+  utop
+  ocamlformat
+  ocp-indent
+  merlin
+  ocaml-lsp-server
  )
  (tags
   (exceptions effects concurrency semantics smallstep)))
