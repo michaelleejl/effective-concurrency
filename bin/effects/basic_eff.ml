@@ -1,9 +1,8 @@
-exception R of int;; 
+exception R of int;;
 
-try 1 + raise (R 2) with 
- | R(x) -> 2 + x
+try 1 + raise (R 2) with R x -> 2 + x
 
- (*Question: How do we handle the raised exception by 
+(*Question: How do we handle the raised exception by 
              returning to the point it was raised, and
              "replaying" it with a value? For example, 
              replay it with 2 + x *)
@@ -31,5 +30,3 @@ try 1 + raise (R 2) with
 (* What does the program above step to? *)
 
 (* Note on types: we need R to have type int (payload) -> int (response/answer) *)
-
-

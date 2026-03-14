@@ -1,4 +1,11 @@
 (executables
- (public_names basic_con notes supo0_id supo1_fork supo2_lock supo3_sem supo4_bar)
+ (public_names
+  basic_con
+  notes
+  supo0_id
+  supo1_fork
+  supo2_lock
+  supo3_sem
+  supo4_bar)
  (names basic_con notes supo0_id supo1_fork supo2_lock supo3_sem supo4_bar)
  (libraries effective_concurrency))
