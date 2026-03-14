@@ -158,7 +158,7 @@ let run_process (es, i) =
         (printf "Global: Semaphore %d is 1. Continuing \n" sem;
           z := (fun x -> if sem = x then 0 else (!z)(x)); 
           continue k (Skip))
-      | 2 -> assert false end 
+      | _ -> assert false end 
   | effect (ThreadSignal (id, sem)), k ->
       printf "Thread %d: Signalling semaphore %d\n" id sem;
       begin match (!z)(sem) with
@@ -169,7 +169,7 @@ let run_process (es, i) =
       | 1 -> 
         (printf "Global: Semaphore %d is already 1. Continuing execution \n" sem;
           continue k (Skip))
-      | 2 -> assert false end 
+      | _ -> assert false end 
   | effect (ThreadBarrier (id, barr)), k ->
       printf "Thread %d: Waiting on barrier %d\n" id barr;
       begin match (!b)(barr) with
