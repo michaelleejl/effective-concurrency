@@ -8,12 +8,17 @@ maintainer: ["Michael Lee <michael.lee@cl.cam.ac.uk>"]
 authors: ["Michael Lee <michael.lee@cl.cam.ac.uk>"]
 license: "MIT"
 tags: ["exceptions" "effects" "concurrency" "semantics" "smallstep"]
-homepage: "https://github.com/username/reponame"
+homepage: "https://github.com/michaelleejl/effective-concurrency"
 doc: "https://www.cl.cam.ac.uk/teaching/2526/Semantics/"
-bug-reports: "https://github.com/username/reponame/issues"
+bug-reports: "https://github.com/michaelleejl/effective-concurrency/issues"
 depends: [
-  "dune" {>= "3.17"}
-  "ocaml"
+  "dune" {>= "3.21"}
+  "ocaml" {>= "5.3.0"}
+  "utop"
+  "ocamlformat"
+  "ocp-indent"
+  "merlin"
+  "ocaml-lsp-server"
   "odoc" {with-doc}
 ]
 build: [
@@ -30,4 +35,5 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/username/reponame.git"
+dev-repo: "git+https://github.com/michaelleejl/effective-concurrency.git"
+x-maintenance-intent: ["(latest)"]
