@@ -1,9 +1,22 @@
 exception R of int;;
 
 try
-  ();
   1 + raise (R 2)
-with R x -> 2 + x
+with R x -> 2 + x;;
+
+(* What is the evaluation context E that is
+   discarded by the raise? *)
+
+try
+  (); 1 + raise (R 2)
+with R x -> 2 + x;;
+
+(* What is the evaluation context E that is
+   discarded by the raise? *)
+
+try
+  1 + raise (R 2) ; 3
+with R x -> 2 + x;;
 
 (* How do we see the evaluation contexts at the point of a raise? *)
 (* One way to see them is via nesting: try [(); [1 + [-]]] with R(x) -> 2+x *)
@@ -14,6 +27,6 @@ with R x -> 2 + x
 (* ---------------------------- *)
 (* |          1 + [-]         | *)
 (* ---------------------------- *)
-(* |         () ; [-]         | *)
+(* |         [-] ; 3          | *)
 (* ---------------------------- *)
 (* | try [-] with R(x) -> 2+x | *)
