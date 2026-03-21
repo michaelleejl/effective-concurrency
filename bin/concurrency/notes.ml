@@ -102,7 +102,9 @@ let thread_loader (es : expr list) =
 let e1 = Seq (Assign (0, Num 3), Skip)
 let e2 = Deref 0
 let process1 = thread_loader [ e1; e2 ]
+(* lock 0; l0 := 1+2; unlock 0*)
 let e3 = Seq (Lock 0, Seq (Assign (0, Plus (Num 1, Num 2)), Unlock 0))
+(* lock 0; unlock 0; !l0*)
 let e4 = Seq (Lock 0, Seq (Unlock 0, Deref 0))
 let process2 = thread_loader [ e3; e4 ]
 let e5 = Seq (Lock 0, Seq (Assign (0, Plus (Num 1, Num 2)), Unlock 0))
